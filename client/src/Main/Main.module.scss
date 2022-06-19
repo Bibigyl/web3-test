@@ -1,0 +1,87 @@
+@import 'styles/vars.scss';
+
+.root {
+  flex-direction: column;
+  margin: 0 auto;
+  max-width: 1640px;
+  padding: 60px 20px 0;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+}
+
+.left {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin-right: 40px;
+  width: 600px;
+}
+
+.wallet {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin-bottom: 40px;
+  width: 100%;
+  min-height: 120px;
+  text-align: center;
+
+  &Button {
+    margin-top: 30px;
+    margin-bottom: 40px;
+  }
+
+  &Title {
+    margin: 0;
+    margin-bottom: 10px;
+    background: $gradientPrimary;
+    -webkit-background-clip: text;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 24px;
+    font-weight: 800;
+    -webkit-text-fill-color: transparent;
+  }
+
+  &Hash {
+    margin-bottom: 40px;
+    font-size: 16px;
+  }
+}
+
+.form {
+  width: 100%;
+  max-width: 380px;
+  border-radius: 5px;
+  background-color: rgba(#071c1c, 0.8);
+  padding: 20px 40px 40px;
+
+  &Title {
+    margin: 0 0 20px;
+  }
+
+  &Field {
+    margin: 15px 0;
+  }
+
+  &Submit {
+    margin: 40px auto 0;
+  }
+}
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  margin-top: 15px;
+  width: 100%;
+  height: fit-content;
+  padding: 20px 0;
+}
+
+.card {
+  margin: 0 10px 20px;
+}

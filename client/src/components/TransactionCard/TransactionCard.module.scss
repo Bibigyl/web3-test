@@ -1,0 +1,35 @@
+@import 'styles/vars.scss';
+
+.root {
+  width: 320px;
+  border: 1px solid #666;
+  border-radius: 5px;
+  background-color: rgb(19 52 52 / 50%);
+  padding: 20px;
+  word-wrap: break-word;
+  color: #ddd;
+
+  p {
+    display: -moz-box;
+    display: -webkit-box;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    -moz-box-orient: vertical;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    line-clamp: 3;
+    box-orient: vertical;
+  }
+
+  span {
+    display: inline-block;
+    min-width: 90px;
+    color: #ffd96b;
+  }
+}
+
+.image {
+  margin: 0 10px;
+  width: 260px;
+  border-radius: 5px;
+}

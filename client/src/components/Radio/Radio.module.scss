@@ -1,0 +1,63 @@
+@import 'styles/vars.scss';
+
+.root {
+  box-sizing: border-box;
+  display: inline-block;
+
+  * {
+    box-sizing: border-box;
+  }
+}
+
+.input {
+  position: absolute;
+  opacity: 0;
+  z-index: -1;
+
+  &:checked + .label:after {
+    opacity: 1;
+  }
+
+  &:focus + .label:before {
+    border-color: $primary;
+  }
+
+  &:checked + .label {
+    color: $grey;
+  }
+}
+
+.label {
+  position: relative;
+  padding: 0 0 0 30px;
+  cursor: pointer;
+  line-height: 20px;
+  color: $grey;
+
+  &:before {
+    box-sizing: border-box;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 20px;
+    height: 20px;
+    border: 1px solid $greyLight;
+    border-radius: 50%;
+    background: #fff;
+    content: '';
+  }
+
+  &:after {
+    box-sizing: border-box;
+    position: absolute;
+    top: 4px;
+    left: 4px;
+    opacity: 0;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background: $gradientPrimary;
+    transition: 0.2s;
+    content: '';
+  }
+}

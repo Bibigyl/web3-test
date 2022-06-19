@@ -1,0 +1,13 @@
+$grey: rgba(31, 32, 65, 0.75);
+$greyDark: rgba(31, 32, 65, 1);
+$greyLight: rgba(31, 32, 65, 0.5);
+$primary: #fffa00;
+$secondary: #206d6e;
+$gradientPrimary: linear-gradient(180deg, $primary 0%, #d1a017 100%);
+$gradientSecondary: linear-gradient(180deg, $secondary 0%, #071c1c 100%);
+$gradientPrimarySemitransparent: linear-gradient(
+  180deg,
+  rgba($primary, 0.5) 0%,
+  rgba(139, 164, 249, 0.5) 100%
+);
+$font: 'Saira';
